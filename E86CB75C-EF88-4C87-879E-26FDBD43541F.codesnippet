@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snippet 17</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static func create(from dict: JSONDictionary) -&gt; Result&lt;FlickrPhotoCommentCollection&gt; {
+        guard let commentsDict = dict[FlickrConstants.Response.Keys.CommentCollection.commentDictionary] &gt;&gt;- _JSONDictionary,
+              let status       = dict[FlickrConstants.Response.Keys.General.status]                      &gt;&gt;- JSONString,
+            status == FlickrConstants.Response.Values.Status.success else { return Result(CreationError.Flickr.comment) }
+        guard let commentsArray = commentsDict[FlickrConstants.Response.Keys.CommentCollection.commentArray] &gt;&gt;- JSONArray else { return Result.init &lt;| FlickrPhotoCommentCollection(elements: []) }
+        return commentsArray.map(FlickrPhotoComment.create).inverted &lt;^&gt; FlickrPhotoCommentCollection.init
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E86CB75C-EF88-4C87-879E-26FDBD43541F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snippet 17 - comment collection create</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

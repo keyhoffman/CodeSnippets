@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snippet 11</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension FlickrPhotoComment {
+    static func create(from dict: JSONDictionary) -&gt; Result&lt;FlickrPhotoComment&gt; {
+        guard let id        = dict[FlickrConstants.Response.Keys.Comment.id]        &gt;&gt;- JSONString,
+            let ownerName = dict[FlickrConstants.Response.Keys.Comment.ownerName] &gt;&gt;- JSONString,
+            let ownerID   = dict[FlickrConstants.Response.Keys.Comment.ownerID]   &gt;&gt;- JSONString,
+            let content   = dict[FlickrConstants.Response.Keys.Comment.content]   &gt;&gt;- JSONString else { return Result(CreationError.Flickr.comment) }
+        return Result.init &lt;| FlickrPhotoComment(id: id, ownerName: ownerName, ownerID: ownerID, content: content)
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9A33144B-4B96-4DEA-9A2C-BAF331D6DFD7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snippet 11 - create comment</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

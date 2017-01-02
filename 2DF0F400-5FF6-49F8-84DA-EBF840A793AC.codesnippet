@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>equatable conformance</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Equatable Conformance
+
+func == (_ lhs: &lt;#type#&gt;, _ rhs: &lt;#type#&gt;) -&gt; Bool {
+    return lhs.&lt;#p1#&gt; == rhs.&lt;#p1#&gt; &amp;&amp; lhs.&lt;#p2#&gt; == rhs.&lt;#p2#&gt; &amp;&amp; lhs.&lt;#p3#&gt; == rhs.&lt;#p3#&gt;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2DF0F400-5FF6-49F8-84DA-EBF840A793AC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Equatable Conformance</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

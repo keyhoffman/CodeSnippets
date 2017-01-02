@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snippet 9</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension JSONCreatable {
+    static func JSONObject&lt;A&gt;  (from object: Any) -&gt; A?                   { return object as? A }
+    static func JSONString     (from object: Any) -&gt; String?              { return object as? String }
+    static func _JSONDictionary(from object: Any) -&gt; JSONDictionary?      { return object as? JSONDictionary } // TODO: Find a better name for this function
+    static func JSONArray      (from object: Any) -&gt; [JSONDictionary]?    { return object as? [JSONDictionary] }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8C2E4710-BFD8-436D-A5A8-6988763A40EC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snippet 9 - jsoncreatable ext</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

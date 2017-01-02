@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snippet 5</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension Response {
+    init?(data: Data?, urlResponse: URLResponse?) {
+        guard let data = data else { return nil }
+        self.data  = data
+        statusCode = (urlResponse as? HTTPURLResponse)?.statusCode ?? 500
+    }
+}
+
+extension Response {
+    static let successRange = 200..&lt;300
+}
+
+// MARK: - Equatable Conformance
+
+func == (_ lhs: Response, _ rhs: Response) -&gt; Bool {
+    return lhs.statusCode == rhs.statusCode &amp;&amp; lhs.data == rhs.data
+}
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3A7ABAD9-5D86-42F0-BE6A-DFAB5E7F99F2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snippet 5 - response ext</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

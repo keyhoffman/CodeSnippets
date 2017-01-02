@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snippet 20</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>¿get &lt;| [FlickrConstants.Parameters.Keys.MetadataCollection.pageNumber: pageNumber]
+                 &lt;| { metadataCollectionResults in _ = metadataCollectionResults &gt;&gt;- { metadataCollection in Result.init
+                 &lt;| metadataCollection.elements.map { metadata in metadata.getPhoto
+                 &lt;| block } } }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5A9138A3-A8BA-40FF-AE8A-7E7F2B930399</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snippet 20 - get curry</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

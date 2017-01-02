@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snippet 16</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension Sequence where Iterator.Element == Result&lt;UIImage&gt; {
+    var inverted: Result&lt;[UIImage]&gt; {
+        return Result.init &lt;| flatMap { $0.toOptional }
+    }
+}
+
+extension Sequence where Iterator.Element == Result&lt;FlickrPhotoComment&gt; {
+    var inverted: Result&lt;[FlickrPhotoComment]&gt; {
+        return Result.init &lt;| flatMap { $0.toOptional }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>941D3FFD-C2ED-4D07-9F20-5C37E0615EBA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snippet 16 - inverted all</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

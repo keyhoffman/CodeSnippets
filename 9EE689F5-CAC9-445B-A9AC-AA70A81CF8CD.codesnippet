@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snippet 13</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var startIndex: Int { return elements.startIndex }
+    var endIndex:   Int { return elements.endIndex }
+    
+    subscript(i: Int) -&gt; FlickrPhotoMetadata {
+        return elements[i]
+    }
+    
+    func index(after i: Int) -&gt; Int {
+        return elements.index(after: i)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9EE689F5-CAC9-445B-A9AC-AA70A81CF8CD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snippet 13 - metadata collection conformance</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

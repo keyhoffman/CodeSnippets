@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snippet 18</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>fileprivate extension FlickrPhotoMetadataCollection {
+    fileprivate static func pageNumber(for index: Int) -&gt; Result&lt;String&gt; {
+        func calculatePage(picturesPerPage: Int) -&gt; Int {
+            return (index + picturesPerPage) / picturesPerPage
+        }
+        return (Int(FlickrConstants.Parameters.Values.MetadataCollection.picturesPerPage) &gt;&gt;- (calculatePage |&gt;&gt; String.init))
+            .toResult &lt;| CreationError.Flickr.metadata
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2492F50B-05AC-4BC3-B50D-5F5E3768B218</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snippet 18 - metadata collection pagenum</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

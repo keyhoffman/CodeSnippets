@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snippet 8</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - FlickrAPIGetable Extension
+
+extension FlickrAPIGetable {
+    static var urlGeneralQueryParameters: URLParameters {
+        return [
+            FlickrConstants.Parameters.Keys.General.apiKey:         FlickrConstants.Parameters.Values.General.apiKey,
+            FlickrConstants.Parameters.Keys.General.responseFormat: FlickrConstants.Parameters.Values.General.responseFormat,
+            FlickrConstants.Parameters.Keys.General.noJSONCallback: FlickrConstants.Parameters.Values.General.noJSONCallback
+        ]
+    }
+    
+    // MARK: - RESTGetable Conformance
+    
+    static var urlAddressParameters: URLParameters {
+        return [
+            host:   FlickrConstants.API.host,
+            path:   FlickrConstants.API.path,
+            scheme: FlickrConstants.API.scheme
+        ]
+    }
+}
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D4AE6740-0F3F-4D18-A6FC-A0BDAC54A595</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snippet 8- Flickrapi getable ext</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

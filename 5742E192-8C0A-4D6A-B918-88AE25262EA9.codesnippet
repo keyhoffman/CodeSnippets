@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snippet 10</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static let urlQueryParameters: URLParameters = urlGeneralQueryParameters + [
+        FlickrConstants.Parameters.Keys.MetadataCollection.method:          FlickrConstants.Parameters.Values.MetadataCollection.Method.getRecent.rawValue,
+        FlickrConstants.Parameters.Keys.MetadataCollection.extras:          FlickrConstants.Parameters.Values.MetadataCollection.extras,
+        FlickrConstants.Parameters.Keys.MetadataCollection.safeSearch:      FlickrConstants.Parameters.Values.MetadataCollection.SafeSearch.moderate.rawValue,
+        FlickrConstants.Parameters.Keys.MetadataCollection.picturesPerPage: FlickrConstants.Parameters.Values.MetadataCollection.picturesPerPage
+    ]</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5742E192-8C0A-4D6A-B918-88AE25262EA9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snippet 10 - url query params</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
